@@ -12,3 +12,14 @@ header {
   color: white;
   padding: 20px;
 }
+
+main {
+  padding: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
