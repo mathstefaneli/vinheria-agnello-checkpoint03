@@ -19,3 +19,7 @@ function listarVinhos() {
 function estoqueBaixo() {
   return vinhos.filter(v => v.estoque < 5);
 }
+
+function estoqueTotal() {
+  return vinhos.reduce((total, v) => total + v.estoque, 0);
+}
