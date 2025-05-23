@@ -40,3 +40,8 @@ console.log(`Estoque total da vinícola: ${total}`);
 const nomesCaixa = nomesCaixaAlta();
 console.log("Nomes dos vinhos em caixa alta:");
 nomesCaixa.forEach(n => console.log(n));
+
+alert("Lista de vinhos:\n" + vinhos.map(v => `${v.nome} (${v.tipo}, ${v.safra}) - Estoque: ${v.estoque}`).join("\n"));
+alert("Vinhos com estoque < 5:\n" + baixos.map(v => `${v.nome} - Estoque: ${v.estoque}`).join("\n"));
+alert(`Estoque total: ${total}`);
+alert("Nomes dos vinhos em CAIXA ALTA:\n" + nomesCaixa.join("\n"));
