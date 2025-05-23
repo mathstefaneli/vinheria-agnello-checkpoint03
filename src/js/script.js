@@ -15,3 +15,7 @@ function listarVinhos() {
     console.log(`${index + 1}. ${vinho.nome} (${vinho.tipo}, ${vinho.safra}) - Estoque: ${vinho.estoque}`);
   });
 }
+
+function estoqueBaixo() {
+  return vinhos.filter(v => v.estoque < 5);
+}
