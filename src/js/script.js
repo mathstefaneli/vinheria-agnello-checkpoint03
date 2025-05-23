@@ -10,7 +10,7 @@ function adicionarVinho(nome, tipo, safra, estoque) {
 }
 
 function listarVinhos() {
-  console.log("🍷 Lista de vinhos:");
+  console.log("Lista de vinhos:");
   vinhos.forEach((vinho, index) => {
     console.log(`${index + 1}. ${vinho.nome} (${vinho.tipo}, ${vinho.safra}) - Estoque: ${vinho.estoque}`);
   });
