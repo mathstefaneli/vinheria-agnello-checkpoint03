@@ -27,3 +27,16 @@ function estoqueTotal() {
 function nomesCaixaAlta() {
   return vinhos.map(v => v.nome.toUpperCase());
 }
+
+listarVinhos();
+
+const baixos = estoqueBaixo();
+console.log("Vinhos com estoque abaixo de 5:");
+baixos.forEach(v => console.log(`${v.nome} - Estoque: ${v.estoque}`));
+
+const total = estoqueTotal();
+console.log(`Estoque total da vinícola: ${total}`);
+
+const nomesCaixa = nomesCaixaAlta();
+console.log("Nomes dos vinhos em caixa alta:");
+nomesCaixa.forEach(n => console.log(n));
