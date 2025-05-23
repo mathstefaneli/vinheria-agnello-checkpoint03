@@ -23,3 +23,7 @@ function estoqueBaixo() {
 function estoqueTotal() {
   return vinhos.reduce((total, v) => total + v.estoque, 0);
 }
+
+function nomesCaixaAlta() {
+  return vinhos.map(v => v.nome.toUpperCase());
+}
